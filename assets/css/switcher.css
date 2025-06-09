@@ -1,0 +1,77 @@
+#switch-style
+{
+	position:fixed;
+	right:0;
+	bottom:15%;
+	z-index: 999;
+	transform:translate(220px, 0px);
+	transition:transform 0.3s ease-out;
+	-webkit-box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.36);
+-moz-box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.36);
+box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.36);
+}
+
+#switch-style.active
+{
+		transform:translate(0px, 0px);
+}
+
+#switch-style > div
+{
+	width:220px;
+	padding:10px;
+	background-color:#FFFFFF;
+	position: relative;
+}
+
+#switch-style > div > ul > li 
+{
+	display:inline-block;
+}
+
+
+#switch-style  > div > a
+{
+	width:40px;
+	height:40px;
+	display:block;
+	line-height:40px;
+	text-align:center;
+	font-size:16px;
+	color:#FFFFFF;
+	background-color:#D8585F;
+	position:absolute;
+	left:-40px;
+	top:0;
+}
+
+#switch-style div > ul
+{
+	list-style:none;
+	padding-left:0;
+	text-align: center;
+}
+#switch-style > div > ul > li 
+{
+	margin-right:5px;
+}
+#switch-style > div > ul > li > a
+{
+	display:block;
+	padding:25px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+#switch-style > div > ul > li > a.style
+{
+	background-color:#E9545C;
+}
+#switch-style > div > ul > li > a.style-1
+{
+	background-color:#4D988B;
+}
+#switch-style > div > ul > li > a.style-2
+{
+	background-color:#B47CE6;
+}
+

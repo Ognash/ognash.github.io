@@ -1,0 +1,649 @@
+/*
+ * 1. GENERAL STYLE
+ * 2. MAIN MENU
+ * 3. HERO IMAGE
+ * 4. WEDDING SECTIO (GROOM & BRIDE)
+ * 5. WEDDING EVENTS
+ * 6. COUNTDOWN
+ * 7. GALLERY
+ * 8. TESTIMONIAL
+ * 9. LOCATION
+ * 10. FOOTER
+ * 11. RSVP FORM
+ * 12. RESPONSIVE (MEDIA QUERY)
+ * 
+ */
+
+html{
+	position:relative;
+	min-height:100%;
+}
+
+body{
+	font-family: "Raleway", sans-serif;	
+	background-color:#fff2f2;
+	margin-bottom:120px;
+}
+
+/* GENERAL STYLE */
+h1
+{
+	font-size:34px;
+}
+h2
+{
+	font-size:28px;
+}
+
+.heading
+{
+	color:#ed1c24;
+	text-align:center;
+}
+
+textarea.noresize {
+  resize: none; 
+}
+
+textarea.vresize {
+  resize: vertical; 
+}
+  
+textarea.hresize {
+  resize: horizontal;  
+}  
+
+
+.progress
+{
+	border-radius:0px;
+	-webkit-border-radius:0px;
+	margin-bottom:0px;
+	height:5px;
+}
+.progress-bar-danger
+{
+	background-color: #c74945;
+}
+
+#loader{
+	display:inline-block;
+}
+
+/* ==================== Main Menu ==================== */
+.navbar.navmenu
+{
+	border-radius:0;
+	margin-bottom:0;
+	background-color:#E9545C;
+	border:none;
+	border-bottom:1px solid #d54c53;
+	transition:all 0.3s ease-out;
+	-webkit-transition:all 0.3s ease-out;
+}
+
+.navbar.navmenu .navbar-brand
+{
+	font-family: "Dancing Script", cursive;
+	color:#FFFFFF;
+}
+.navmenu ul.nav
+{
+	float:none;
+	text-align:center;
+}
+.navmenu ul.nav li{
+	float:none;
+	display:inline-block;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.navmenu ul.nav li > a
+{
+	padding-top:3px;
+	padding-bottom:3px;
+	border-radius:3px;
+	color:#FFF;
+}
+.navmenu ul.nav li.active > a, 
+.navmenu ul.nav li.active > a:hover,
+.navmenu ul.nav li.active > a:focus,
+.navbar .navbar-toggle:focus
+{
+	color:#ea545d;
+	background-color:#FFA5AA;
+}
+
+.navmenu ul.nav li > a:hover
+{
+	color:#FFF;
+	background-color:#FFA5AA;
+}
+
+.navmenu ul.nav li > a:focus
+{
+	background-color:rgba(255,255,255,0);
+	color:#FFF;
+}
+.navbar.navbar-fixed-top
+{
+	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+}
+
+.navbar .navbar-toggle
+{
+	color:#FFFFFF;
+	width:40px;
+	height:40px;
+}
+.navbar .navbar-toggle:hover
+{
+		color:#FFF;
+	background-color:#FFA5AA;
+}
+/* ==================== Hero Image ==================== */
+#hero
+{
+min-height:480px;
+}
+#hero .bx-viewport
+{
+	border:none;
+	left:0;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+#hero .bx-viewport .slider > div
+{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center top;
+	width:100%;
+	height:480px;
+}
+
+#hero.yout-background
+{
+	background:#000000;
+}
+
+/* ==================== Wedding Section ==================== */
+#weddings
+{
+	margin-top:-200px;
+
+}
+#weddings > .container
+{
+	background:url("../images/pattern.png");
+	padding-top:35px;
+	padding-bottom:35px;
+	border:1px solid #ebe2e2;
+	position:relative;
+}
+
+#weddings > .container::after
+{
+	content:"";
+    position:absolute;
+    -webkit-box-shadow:0 0 25px rgba(0,0,0,0.7);
+    box-shadow:0 0 25px rgba(0,0,0,0.7);
+    bottom:0px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    z-index:-1;
+    width:80%;
+    height:42px;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+#weddings > .container > div
+{
+	overflow:hidden;
+}
+#weddings .person
+{
+	text-align:center;
+	padding:10px;
+}
+#weddings .person > figure > img
+{
+	display:block;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	margin:0 auto;
+}
+#weddings .person > .text > h2
+{
+	font-family:"Dancing Script", cursive;
+	font-weight:800;
+	color:#626262;
+}
+#weddings .person > .text > p
+{
+	color:#131313;
+}
+
+
+#weddings .weddingday
+{
+	margin:4em 0;
+}
+
+#weddings .heading > h1
+{
+	font-size:24px;
+	margin-bottom:20px;
+	margin-top:0;
+}
+
+#weddings .weddingday > .thedate
+{
+	width:152px;
+	height:130px;
+	font-family:"Dancing Script", cursive;
+	background:url("../images/heartshape.png") no-repeat center;
+	margin:0 auto;
+}
+#weddings .weddingday > .thedate > p
+{
+	text-align:center;
+	line-height:120px;
+	font-size:18px;
+	color:#FFFFFF;
+}
+/* ==================== Wedding Events ==================== */
+
+#events 
+{
+	padding:40px 0px;
+}
+
+#events .heading
+{
+	margin-top:80px;
+	margin-bottom:80px;
+	color:#626262;
+}
+#events .heading h2
+{
+
+	font-family:"Dancing Script", cursive;
+}
+#event .heading p
+{
+	color:#a7a199;
+}
+#events .heading .btn
+{
+	min-width:220px;
+}
+.box-col-1 {
+	background-color: #fff2f2;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	border:1px solid #9c9c9c;
+	width:100%;
+	box-sizing:border-box;
+}
+
+.box-col-1 .box {
+	position:relative;
+	padding: 35px 30px;
+}
+
+.box-col-1 .box h2 {
+	text-align: center;
+	font-size:24px;
+	border-bottom: 1px solid #a7a199;
+	padding: 0px 0px 15px 0px;
+	position: relative;
+	z-index: 5;
+	margin-top:0;
+	margin-bottom:20px;
+	color:#ed1c24;
+	
+}
+.box-col-1 .box h2::before {
+	content: "";
+	border-bottom: 1px solid #b4b4b;
+	left: 0;
+	bottom: -2px;
+	z-index: -1;
+	width: 100%;
+	position: absolute;
+}
+.box-col-1 .box ul 
+{
+	list-style:none;
+	padding-left:0;
+}
+.box-col-1 .box ul li {
+	padding-bottom:10px;
+	color: #131313;
+	
+}
+.box-col-1 .box ul li p
+{
+	box-sizing:border-box;
+	padding-left:30px;
+}
+
+.box-col-1 .box ul li span  {
+
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 18px;
+	float: left;
+}
+
+.box-col-1 .box-ornament-top, .box-col-1 .box-ornament-bottom {
+	position: absolute;
+	width: 100%;
+	min-height: 35px;
+	left: 0;
+	
+}
+
+.box-col-1 .box-ornament-top {
+	top: 0;
+}
+
+.box-col-1 .box-ornament-bottom {
+	bottom: 0;
+}
+
+.box-col-1 .box-ornament-top span, 
+.box-col-1 .box-ornament-bottom span {
+
+	background: url("../images/ornament-box.png") center no-repeat;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	
+	padding:10px;
+}
+.box-col-1 .box-ornament-bottom span.ornament-left, 
+.box-col-1 .box-ornament-top span.ornament-left {
+	left: 0px;
+}
+
+.box-col-1 .box-ornament-bottom span.ornament-right, 
+.box-col-1 .box-ornament-top span.ornament-right {
+	right: 0px;
+}
+.box-col-1 .box-ornament-bottom span.ornament-left {
+	background-position: 0 0;
+}
+
+.box-col-1 .box-ornament-bottom span.ornament-right {
+	background-position: -35px 0;
+}
+
+.box-col-1 .box-ornament-top span.ornament-left {
+	background-position: 0 -35px;
+}
+
+.box-col-1 .box-ornament-top span.ornament-right {
+	background-position: -35px -35px;
+}
+
+
+/* ========================= COUNTDOWN ========================== */
+
+.countdown-wrapper {
+	text-align:center;
+	padding:30px 0px;
+	background:url("../images/pattern.png");
+}
+.countdown-wrapper li {
+	display: inline-block;
+	position: relative;
+	padding: 0px 15px;
+	color: #d8585f;
+	font-size: 38px;
+}
+
+.countdown-wrapper h2 {
+	margin-top: 20px;
+	color:#626262;
+	margin-bottom: 10px;
+}
+.countdown-wrapper #countdown ul
+{
+	padding-left:0px;
+}
+
+.countdown-wrapper li:first-child:before, 
+.countdown-wrapper li:first-child:after {
+	content: '';
+}
+.countdown-wrapper li::before {
+	position: absolute;
+	content: '\f004';
+	font-family: "FontAwesome";
+	display: inline-block;
+	font-size: 14px;
+	left: -10px;
+	top: 1.5em;
+}
+.countdown-wrapper li::after {
+	position: absolute;
+	content: '\f08a';
+	font-family: "FontAwesome";
+	display: inline-block;
+	font-size: 14px;
+	left: -10px;
+	color: #ffa5aa;
+	top: 1.5em;
+}
+.countdown-wrapper li span {
+	display: block;
+	font-size: 14px;
+	color: #9f9f9f;
+}
+
+
+/* ============================== GALLERY ==================================== */
+#gallery
+{
+	overflow: hidden;
+}
+#gallery > div
+{
+	float:left;
+	width:16.666%;
+	width:calc(100%/4);
+  	width:-webkit-calc(100%/4);
+  	overflow:hidden;
+}
+#gallery > div > a
+{
+	display:block;
+}
+#gallery > div > a > img
+{
+	width:100%;
+	display:block;
+	transition:all 0.3s ease-out;
+	-webkit-transition:all 0.3s ease-out;
+}
+#gallery > div > a:hover > img
+{
+	transform: rotate(5deg) scale(1.2,1.2);
+	-webkit-transform: rotate(5deg) scale(1.2,1.2);
+}
+
+/* ============================== TESTIMONIAL ==================================== */
+#testimonial 
+{
+	padding:40px 0px;
+}
+
+#testimonial > .container
+{
+	background:url("../images/pattern.png");
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+
+#testimonial > .container > div:first-child
+{
+	float:right;
+}
+
+#testimonial.facebook > .container{
+	background:transparent;
+}
+#testimonial.facebook > .container > div:first-child
+{
+	float:none;
+}
+
+#testimonial.facebook .comment-wrapper{
+
+	max-width:800px;
+	position:relative;
+	margin:0 auto;
+
+}
+
+#testimonial #carousel
+{
+	min-height:392px;
+	padding:20px;
+}
+
+#testimonial #carousel .item >  p
+{
+	font-size:18px;
+	font-weight:400;
+}
+#testimonial #carousel .item > div > strong
+{
+	font-size:18px;
+}
+#testimonial #carousel .carousel-indicators
+{
+	
+}
+
+
+.form-wrapper
+{
+	padding:20px;
+}
+.form-wrapper label
+{
+	color:#626262;
+}
+
+/* ====================== LOCATION ============= */
+#location
+{
+	padding:20px 0px;
+	background:url("../images/pattern.png");
+}
+#location .container
+{
+	padding-left:0;
+	padding-right:0;
+}
+#location #map
+{
+	height:380px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+/* ====================== RSVP FORM ============= */
+#rsvp #rsvpform label 
+{
+	color:#ED1C24;
+}
+
+#rsvp .modal-header
+{
+	background-color:#E9545C;
+	color:#FFFFFF;
+}
+#rsvp .modal-header > button
+{
+	font-size:28px;
+}
+/* ======================= FOOTER ====================*/
+#footer
+{
+	height:120px;
+	background-color: #EA545D;
+	position:absolute;
+	width:100%;
+	bottom:0;
+	box-sizing:border-box;
+	padding:20px 0px;
+	color:#FFFFFF;
+}
+
+#footer .footer-text 
+{
+	text-align:center;
+}
+#footer .footer-text p
+{
+	margin-bottom:0;
+}
+#footer .footer-text > h2
+{
+	margin-top:0;
+	font-family:"Dancing Script", cursive;
+	font-size:39px;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width:767px)
+{
+	#hero.yout-background
+	{
+		min-height:auto;
+	}
+	.navmenu ul.nav li
+	{
+		display:block;
+	}
+	
+	#testimonial
+	{
+		padding:0px;
+	}
+	
+	#gallery > div
+	{
+		width:50%;
+		width:calc(100%/2);
+	}
+}
+
+@media (max-width:640px)
+{
+	#location 
+	{
+		padding:0px;
+	}
+	
+	#location #map
+	{
+		margin-bottom:0px;
+	}
+
+}
