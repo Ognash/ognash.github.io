@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Responsive Landing HTML Bootstrap 5 + RTL support">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.png">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/photoswipe.css">
+<link rel="stylesheet" href="assets/css/card.css">
+<link rel="stylesheet" href="assets/css/aos.css">
+<link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<title>Ariket - Personal Portfolio Resume HTML Template + RTL support</title>
+</head>
+<body>
+<!-- Start include modal, offcanvas, etc...  -->
+<!--Modal Photo Swipe -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe.
+            It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"
+                        aria-label="Fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out" aria-label="Zoom"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Login/Register -->
+<div class="modal fade" id="AddToCart" aria-hidden="true" aria-labelledby="AddToCart" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center px-5 py-3">
+                <h2 class="h4">Your Cart</h2>
+                <button type="button" class="btn-close position-absolute end-0 me-4" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <!--Item Product-->
+
+
+
+<!--Item product-->
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden d-inline-block" href="product.html">
+                <img alt="img" 
+     src="assets/img/portfolio/portfolio-1.jpg"
+      loading="lazy"
+     class="img-fluid ">
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-10">
+                    <h3 class="mb-2 card-title h6"><a
+                            href="product.html"><span>Business - Beauty, Cosmetics Store WooCommerce WordPress</span></a></h3>
+                    <div class="mb-2 product-price fs-14 fw-bold">
+                        <span>$79.00</span>
+                        <del class="ms-1 opacity-75 fs-12">$89.00</del>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 text-end">
+                    <a aria-label="link" class="text-decoration-none"
+                       href="#">
+                       <i class="bi bi-x fs-20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+<!--Item product-->
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden d-inline-block" href="product.html">
+                <img alt="img" 
+     src="assets/img/portfolio/portfolio-3.jpg"
+      loading="lazy"
+     class="img-fluid ">
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-10">
+                    <h3 class="mb-2 card-title h6"><a
+                            href="product.html"><span>Loea - Beauty, Cosmetics Store WooCommerce WordPress</span></a></h3>
+                    <div class="mb-2 product-price fs-14 fw-bold">
+                        <span>$79.00</span>
+                        <del class="ms-1 opacity-75 fs-12">$89.00</del>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 text-end">
+                    <a aria-label="link" class="text-decoration-none"
+                       href="#">
+                       <i class="bi bi-x fs-20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+<!--Item product-->
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden d-inline-block" href="product.html">
+                <img alt="img" 
+     src="assets/img/portfolio/portfolio-4.jpg"
+      loading="lazy"
+     class="img-fluid ">
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-10">
+                    <h3 class="mb-2 card-title h6"><a
+                            href="product.html"><span>Shuide - Responsive Landing Bootstrap 5 Template + RTL</span></a></h3>
+                    <div class="mb-2 product-price fs-14 fw-bold">
+                        <span>$79.00</span>
+                        <del class="ms-1 opacity-75 fs-12">$89.00</del>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 text-end">
+                    <a aria-label="link" class="text-decoration-none"
+                       href="#">
+                       <i class="bi bi-x fs-20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+<!--End Item Product-->
+                </ul>
+            </div>
+            <div class="modal-footer border-top">
+                <div class="d-flex flex-nowrap justify-content-between align-items-center mb-2 w-100">
+                    <p class="mb-1">Subtotal:</p>
+                    <h5>$480.00</h5>
+                </div>
+                <!--link-->
+                <a aria-label="link" class="btn btn-primary btn-icon w-100"
+                   href="checkout.html"><span>Continue to Checkout</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Margic cursor -->
+<div class="cursor"></div>
+<!-- End Margic cursor -->
+<!-- End include modal, offcanvas, etc...  -->
+<main>
+    <div class="col-wrap">
+        <div class="col-sidebar bg-body-tertiary px-2 py-0 p-sm-3 text-center have-mockup-1" data-aos="fade-right">
+            <!-- Start Header -->
+            <div class="d-flex justify-content-between align-items-center d-sm-none">
+                <div class="d-inline-block py-2">
+                    <div class="hamburger-menu style-bg" data-toggle="modal"
+     data-bs-toggle="offcanvas"
+     data-bs-target="#MenuCanvas" aria-controls="MenuCanvas">
+    <div class="hamburger-inner">
+        <span></span>
+    </div>
+</div>
+                </div>
+                <div class="d-inline-block" data-aos="fade-left" data-aos-delay="50">
+                    <a class="btn btn-icon btn-primary btn-sm" href="#">Get it touch</a>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-viewdesktop offcanvas-menu offcanvas-start border-0 mx-auto"
+                 tabindex="-1"
+                 id="MenuCanvas"
+                 aria-labelledby="MenuCanvas">
+                <div class="offcanvas-header border-bottom">
+                    <!--Heading-->
+                    <div class="w-50">
+                        <div class="dark-v">
+                            <!--Brand-->
+                            <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                                <img alt="img" 
+     src="assets/img/logo.png"
+      loading="lazy"
+     class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="light-v">
+                            <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                                <img alt="img" 
+     src="assets/img/logo-white.png"
+      loading="lazy"
+     class="img-fluid ">
+                            </a>
+                        </div>
+                    </div>
+                    <!--Button Close-->
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav-canvas">
+                        <!-- Start navigation -->
+<div class="border-bottom pb-4 mb-4">
+        <div class="avatar mb-2 px-5">
+            <div class="rounded-circle overflow-hidden bg-body-tertiary">
+                <a href="index.html">
+                    <img src="assets/img/section/avatar.png" alt="img" class="img-fluid">
+                </a>
+
+            </div>
+        </div>
+        <div class="mt-2">
+            <h5 class="mb-0 fw-bold">Luke Johnson</h5>
+            <p class="opacity-75 fs-12">UI/UX Designer</p>
+        </div>
+    <!--Socials-->
+<ul class="list-inline list-inline-circle mb-0 d-flex align-items-center justify-content-center">
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="#"><i
+            class="list-inline-social-icon bi bi-facebook"></i></a></li>
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="#"><i
+            class="list-inline-social-icon bi bi-twitter-x"></i></a></li>
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="#"><i
+            class="list-inline-social-icon bi bi-instagram"></i></a></li>
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="#"><i
+            class="list-inline-social-icon bi bi-pinterest"></i></a></li>
+</ul>
+<!--End Socials-->
+
+
+</div>
+<ul class="navbar-nav navbar-nav-menu flex-wrap text-start ">
+    <li>
+        <a aria-label="link" class="nav-link" href="index.html"><i class="bi bi-person-plus me-2"></i>About Me</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="portfolio.html"><i class="bi bi-ui-radios-grid me-2"></i>Portfolio <span class="badge float-end">34</span></a>
+    </li>
+   <li class="active">
+        <a aria-label="link" class="nav-link" href="pricing.html"><i class="bi bi-app-indicator me-2"></i>Services</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="resume.html"><i class="bi bi-filetype-pdf me-2"></i>Resume</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="contact.html"><i class="bi bi-geo-alt me-2"></i>Contact</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="shop.html"><i class="bi bi-bag-check me-2"></i>Shop</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="blog.html"><i class="bi bi-sticky me-2"></i>Blog</a>
+    </li>
+</ul>
+<!-- End navigation -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Header -->
+        </div>
+        <div class="col-content" data-aos="fade">
+            <!-- start section -->
+            <section class="section section-no-break border-bottom pt-8 pb-5 pb-lg-8 overflow-hidden">
+    <div class="container container-inner">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-10">
+            <div class="hero-caption text-center mb-5">
+                <p class="mb-2 pre-heading" data-aos="fade-up"><i class="bi bi-lightning"></i>Pricing</p>
+                <h2 class="h3 mb-4" data-aos="fade-up"
+                    data-aos-delay="50">
+                    Manage All Your Social Media Profiles From One
+                    Place.
+                </h2>
+                <div class="overflow-hidden opacity-75 d-flex flex-wrap align-items-center justify-content-center">
+                    <p class="d-inline-block fw-bold mx-3" data-aos="fade-up" data-aos-delay="100"><i
+                            class="bi bi-check me-2"></i>Free 15-day trial</p>
+                    <p class="d-inline-block fw-bold mx-3" data-aos="fade-up" data-aos-delay="200"><i
+                            class="bi bi-check me-2"></i>Unlimited Team Members</p>
+                    <p class="d-inline-block fw-bold mx-3" data-aos="fade-up" data-aos-delay="300"><i
+                            class="bi bi-check me-2"></i>Cancel Anytime</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix" data-aos="fade-up" data-aos-delay="400">
+        <ul class="nav nav-tabs d-flex justify-content-center mb-1" id="myTab" role="tablist">
+            <li class="nav-item mx-2" role="presentation">
+                <button class="nav-link fw-bold active" id="month" data-bs-toggle="tab" data-bs-target="#month-pane"
+                        type="button"
+                        role="tab" aria-controls="month-pane" aria-selected="true">Billed Monthly
+                </button>
+            </li>
+            <li class="nav-item mx-2" role="presentation">
+                <button class="nav-link fw-bold" id="year-tab" data-bs-toggle="tab" data-bs-target="#year-tab-pane"
+                        type="button"
+                        role="tab" aria-controls="year-tab-pane" aria-selected="false">Billed Yearly
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane show active" id="month-pane" role="tabpanel" aria-labelledby="month" tabindex="0">
+                <div class="row row-cols-1 row-cols-lg-3 gx-4 gx-xl-5">
+                    <div class="col mt-5">
+                        <div class="card h-100 d-flex flex-column justify-content-between h-100 py-3 py-lg-5 px-3 px-xxl-5 hover-border-primary">
+                            <div class="clearfix">
+                                <div class="card-header bg-transparent">
+                                    <h6 class="my-0 mb-2 text-uppercase">Startup</h6>
+                                </div>
+                                <div class="card-body py-0">
+                                    <h3 class="card-title h2 mb-3"><span>$</span>19<span class="h5">.00</span></h3>
+                                    <p class="opacity-75">Monthly Package</p>
+
+                                    <div class="w-100 border-top d-inline-block"></div>
+                                    <ul class="list-unstyled fw-bold opacity-75 mt-3 mb-0">
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>5 Social
+                                            Profiles
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>5 Scheduled
+                                            Posts
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>400+ Templates
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>24/7 Support
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>Help center
+                                            access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button"
+                                    class="d-block w-100 mx-auto p-3 mw-auto btn btn-responsive btn-outline-mode mt-5">
+                                Start My
+                                15-day Trial
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col mt-5">
+                        <div class="card h-100 d-flex flex-column justify-content-between h-100 py-3 py-lg-5 px-3 px-xxl-5 hover-border-primary bg-black style-white">
+                            <div class="clearfix">
+                                <div class="card-header bg-transparent">
+                                    <h6 class="my-0 mb-2 text-uppercase">Agency</h6>
+                                </div>
+                                <div class="card-body py-0">
+                                    <h3 class="card-title h2 mb-3"><span>$</span>129<span class="h5">.00</span></h3>
+                                    <p class="opacity-75">Monthly Package</p>
+                                    <div class="w-100 border-top d-inline-block"></div>
+                                    <ul class="list-unstyled fw-bold opacity-75 mt-3 mb-0">
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>100 Social
+                                            Profiles
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>100 Scheduled
+                                            Posts
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>400+ Templates
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>24/7 Support
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>Premium Support</li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>Help center
+                                            access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button"
+                                    class="d-block w-100 mx-auto p-3 mw-auto btn btn-responsive btn-primary mt-5">
+                                Start My
+                                15-day Trial
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col mt-5">
+                        <div class="card h-100 d-flex flex-column justify-content-between h-100 py-3 py-lg-5 px-3 px-xxl-5 hover-border-primary">
+                            <div class="clearfix">
+                                <div class="card-header bg-transparent">
+                                    <h6 class="my-0 mb-2 text-uppercase">Business</h6>
+                                </div>
+                                <div class="card-body py-0">
+                                    <h3 class="card-title h2 mb-3"><span>$</span>29<span class="h5">.00</span></h3>
+                                    <p class="opacity-75">Monthly Package</p>
+                                    <div class="w-100 border-top d-inline-block"></div>
+                                    <ul class="list-unstyled fw-bold opacity-75 mt-3 mb-0">
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>15 Social
+                                            Profiles
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>25 Scheduled
+                                            Posts
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>400+ Templates
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>24/7 Support
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>Premium
+                                            Support
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>Help center
+                                            access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button"
+                                    class="d-block w-100 mx-auto p-3 mw-auto btn btn-responsive btn-outline-mode mt-5">
+                                Start
+                                My 15-day Trial
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="year-tab-pane" role="tabpanel" aria-labelledby="year-tab" tabindex="0">
+                <div class="row row-cols-1 row-cols-lg-3 gx-4 gx-xl-5">
+                    <div class="col mt-5">
+                        <div class="card h-100 d-flex flex-column justify-content-between h-100 py-3 py-lg-5 px-3 px-xxl-5 hover-border-primary">
+                            <div class="clearfix">
+                                <div class="card-header bg-transparent">
+                                    <h6 class="my-0 mb-2 text-uppercase">Startup</h6>
+                                </div>
+                                <div class="card-body py-0">
+                                    <h3 class="card-title h2 mb-3"><span>$</span>129<span class="h5">.00</span></h3>
+                                    <p class="opacity-75">Billed Yearly</p>
+                                    <div class="w-100 border-top d-inline-block"></div>
+                                    <ul class="list-unstyled fw-bold opacity-75 mt-3 mb-0">
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>5 Social Profiles
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>5 Scheduled Posts
+                                            Per Profile
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>400+ Templates
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>24/7 Support</li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>Help center access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button"
+                                    class="d-block w-100 mx-auto p-3 mw-auto btn btn-responsive btn-outline-mode mt-5">
+                                Start My
+                                15-day Trial
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col mt-5">
+                        <div class="card h-100 d-flex flex-column justify-content-between h-100 py-3 py-lg-5 px-3 px-xxl-5 hover-border-primary bg-black style-white">
+                            <div class="clearfix">
+                                <div class="card-header bg-transparent">
+                                    <h6 class="my-0 mb-2 text-uppercase">Agency</h6>
+                                </div>
+                                <div class="card-body py-0">
+                                    <h3 class="card-title h2 mb-3"><span>$</span>329<span class="h5">.00</span></h3>
+                                    <p class="opacity-75">Billed Yearly</p>
+                                    <div class="w-100 border-top d-inline-block"></div>
+                                    <ul class="list-unstyled fw-bold opacity-75 mt-3 mb-0">
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>100 Social
+                                            Profiles
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>100 Scheduled
+                                            Posts
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>400+ Templates
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>24/7 Support</li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>Premium Support</li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>Help center access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button"
+                                    class="d-block w-100 mx-auto p-3 mw-auto btn btn-responsive btn-primary mt-5">
+                                Start My
+                                15-day Trial
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col mt-5">
+                        <div class="card h-100 d-flex flex-column justify-content-between h-100 py-3 py-lg-5 px-3 px-xxl-5 hover-border-primary">
+                            <div class="clearfix">
+                                <div class="card-header bg-transparent">
+                                    <h6 class="my-0 mb-2 text-uppercase">Business</h6>
+                                </div>
+                                <div class="card-body py-0">
+                                    <h3 class="card-title h2 mb-3"><span>$</span>229<span class="h5">.00</span></h3>
+                                    <p class="opacity-75">Billed Yearly</p>
+
+                                    <div class="w-100 border-top d-inline-block"></div>
+                                    <ul class="list-unstyled fw-bold opacity-75 mt-3 mb-0">
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>15 Social Profiles
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>25 Scheduled Posts
+                                            Per Profile
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>400+ Templates
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>24/7 Support</li>
+                                        <li class="mb-3"><i class="bi bi-check-square me-2"></i>Help center access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button"
+                                    class="d-block w-100 mx-auto p-3 mw-auto btn btn-responsive btn-outline-mode mt-5">
+                                Start
+                                My 15-day
+                                Trial
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+<section class="section section-no-break overflow-hidden">
+    <div class="container">
+        <div class="row gx-4 gx-lg-5 justify-content-between">
+            <div class="col col-12 col-lg-7 mt-5" data-aos="fade-right">
+                <div class="item mb-5">
+                    <div class="heading mb-4">
+                        <h2 class="h4"><i class="bi bi-credit-card me-2"></i>Payment</h2>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFaqs">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fs-20 fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                    How long does it take to start selling online?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionFaqs">
+                                <div class="accordion-body">
+                                    Quisque sit amet turpis et nisl cursus dictum. Donec tristique ligula eget leo
+                                    malesuada tristique. Nunc nisl lacus, ornare eget eleifend eget, dignissim nec
+                                    ex. Nulla tortor risus, dignissim in urna sit amet, vulputate tristique ex.
+                                    Vivamus egestas ipsum nec laoreet vehicula. Nullam vel lacinia urna, ac
+                                    tincidunt elit. Praesent pulvinar tellus sapien, sit amet commodo lacus mollis
+                                    at.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button fs-20 fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                    What payment methods should I offer to my clients?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionFaqs">
+                                <div class="accordion-body">
+                                    Quisque sit amet turpis et nisl cursus dictum. Donec tristique ligula eget leo
+                                    malesuada tristique. Nunc nisl lacus, ornare eget eleifend eget, dignissim nec
+                                    ex. Nulla tortor risus, dignissim in urna sit amet, vulputate tristique ex.
+                                    Vivamus egestas ipsum nec laoreet vehicula. Nullam vel lacinia urna, ac
+                                    tincidunt elit. Praesent pulvinar tellus sapien, sit amet commodo lacus mollis
+                                    at.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button fs-20 fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    Do I need a programmer to start accepting online payments?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                 aria-labelledby="headingThree" data-bs-parent="#accordionFaqs">
+                                <div class="accordion-body">
+                                    Quisque sit amet turpis et nisl cursus dictum. Donec tristique ligula eget leo
+                                    malesuada tristique. Nunc nisl lacus, ornare eget eleifend eget, dignissim nec
+                                    ex. Nulla tortor risus, dignissim in urna sit amet, vulputate tristique ex.
+                                    Vivamus egestas ipsum nec laoreet vehicula. Nullam vel lacinia urna, ac
+                                    tincidunt elit. Praesent pulvinar tellus sapien, sit amet commodo lacus mollis
+                                    at.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button fs-20 fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                    Do I have to have a business account to accept online payments?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                 data-bs-parent="#accordionFaqs">
+                                <div class="accordion-body">
+                                    Quisque sit amet turpis et nisl cursus dictum. Donec tristique ligula eget leo
+                                    malesuada tristique. Nunc nisl lacus, ornare eget eleifend eget, dignissim nec
+                                    ex. Nulla tortor risus, dignissim in urna sit amet, vulputate tristique ex.
+                                    Vivamus egestas ipsum nec laoreet vehicula. Nullam vel lacinia urna, ac
+                                    tincidunt elit. Praesent pulvinar tellus sapien, sit amet commodo lacus mollis
+                                    at.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item mb-5">
+                    <div class="heading mb-4">
+                        <h2 class="h4"><i class="bi bi-clock-history me-2"></i>Best Store</h2>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFaqs2">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne2">
+                                <button class="accordion-button fs-20 fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne2" aria-expanded="true"
+                                        aria-controls="collapseOne2">
+                                    What is your company all about?
+                                </button>
+                            </h3>
+                            <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2"
+                                 data-bs-parent="#accordionFaqs2">
+                                <div class="accordion-body">
+                                    Quisque sit amet turpis et nisl cursus dictum. Donec tristique ligula eget leo
+                                    malesuada tristique. Nunc nisl lacus, ornare eget eleifend eget, dignissim nec
+                                    ex. Nulla tortor risus, dignissim in urna sit amet, vulputate tristique ex.
+                                    Vivamus egestas ipsum nec laoreet vehicula. Nullam vel lacinia urna, ac
+                                    tincidunt elit. Praesent pulvinar tellus sapien, sit amet commodo lacus mollis
+                                    at.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo2">
+                                <button class="accordion-button fs-20 fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo2" aria-expanded="false"
+                                        aria-controls="collapseTwo2">
+                                    Where are you located?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
+                                 data-bs-parent="#accordionFaqs2">
+                                <div class="accordion-body">
+                                    Quisque sit amet turpis et nisl cursus dictum. Donec tristique ligula eget leo
+                                    malesuada tristique. Nunc nisl lacus, ornare eget eleifend eget, dignissim nec
+                                    ex. Nulla tortor risus, dignissim in urna sit amet, vulputate tristique ex.
+                                    Vivamus egestas ipsum nec laoreet vehicula. Nullam vel lacinia urna, ac
+                                    tincidunt elit. Praesent pulvinar tellus sapien, sit amet commodo lacus mollis
+                                    at.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree2">
+                                <button class="accordion-button fs-20 fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree2" aria-expanded="false"
+                                        aria-controls="collapseThree2">
+                                    What products or services do you offer?
+                                </button>
+                            </h3>
+                            <div id="collapseThree2" class="accordion-collapse collapse"
+                                 aria-labelledby="headingThree2" data-bs-parent="#accordionFaqs2">
+                                <div class="accordion-body">
+                                    Quisque sit amet turpis et nisl cursus dictum. Donec tristique ligula eget leo
+                                    malesuada tristique. Nunc nisl lacus, ornare eget eleifend eget, dignissim nec
+                                    ex. Nulla tortor risus, dignissim in urna sit amet, vulputate tristique ex.
+                                    Vivamus egestas ipsum nec laoreet vehicula. Nullam vel lacinia urna, ac
+                                    tincidunt elit. Praesent pulvinar tellus sapien, sit amet commodo lacus mollis
+                                    at.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour2">
+                                <button class="accordion-button fs-20 fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour2" aria-expanded="false"
+                                        aria-controls="collapseFour2">
+                                    How do users contact customer service or support?
+                                </button>
+                            </h3>
+                            <div id="collapseFour2" class="accordion-collapse collapse"
+                                 aria-labelledby="headingFour2" data-bs-parent="#accordionFaqs2">
+                                <div class="accordion-body">
+                                    Quisque sit amet turpis et nisl cursus dictum. Donec tristique ligula eget leo
+                                    malesuada tristique. Nunc nisl lacus, ornare eget eleifend eget, dignissim nec
+                                    ex. Nulla tortor risus, dignissim in urna sit amet, vulputate tristique ex.
+                                    Vivamus egestas ipsum nec laoreet vehicula. Nullam vel lacinia urna, ac
+                                    tincidunt elit. Praesent pulvinar tellus sapien, sit amet commodo lacus mollis
+                                    at.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 col-lg-4 mt-5" data-aos="fade-left">
+                <div class="sticky-lg-top top-100px">
+                    <div class="hero-caption mb-5">
+                        <h3 class="h4 mb-3">Can Find Answer? Ask Us</h3>
+                        <p>Tell us more about yourself and whant you're got in mind.</p>
+                    </div>
+                    <form method="post" name="form-contact">
+                        <input type="text" class="form-control mb-4 " id="fa-name"
+                               placeholder="Full Name">
+                        <input type="email" class="form-control mb-4 " id="fa-email"
+                               placeholder="Email">
+                        <textarea class="form-control mb-4"
+                                  id="fa-message" placeholder="Message" rows="6" cols="100"></textarea>
+                        <div class="text-end">
+                            <button class="btn btn-primary btn-icon mt-2" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- end section -->
+            <!-- Start footer section -->
+            <footer class="section pb-5 overflow-x-hidden border-top">
+                <div class="container">
+                    <ul class="nav list-unstyled mb-5 mb-xxl-7">
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="pricing.html">Services</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="contact.html">Contact</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="shop.html">Shop</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-12 col-lg-7 mb-5">
+                            <div data-aos="flip-down" data-aos-delay="100">
+                                <div class="dark-v">
+                                    <img src="assets/img/section/name-logo.svg" alt="img" class="img-fluid w-100">
+                                </div>
+                                <div class="light-v">
+                                    <img src="assets/img/section/name-logo-dark.svg" alt="img" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <p class="mt-3">@2024</p>
+                        </div>
+                        <div class="col-12 col-xxl-4">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-3">
+                                    <h3 class="fs-16 mb-4">Language</h3>
+                                    <ul class="list-unstyled mb-5">
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#">En</a>
+                                        </li>
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#">Fr</a>
+                                        </li>
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#">Ru</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3">
+                                    <h3 class="fs-16 mb-4">Socials</h3>
+                                    <ul class="list-unstyled mb-5">
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#"><i
+                                                    class="bi bi-instagram me-1"></i>Instagram</a>
+                                        </li>
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#"><i
+                                                    class="bi bi-facebook me-1"></i>Facebook</a>
+                                        </li>
+
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#"><i
+                                                    class="bi bi-pinterest me-1"></i>Pinterest</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h3 class="fs-16 mb-4">Info</h3>
+                                    <p>We provide great services for our customers based on needs</p>
+                                    <a class="btn btn-icon btn-primary fs-14 btn-sm" href="#">Contact Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End footer section -->
+        </div>
+    </div>
+</main>
+<!-- Start footer include -->
+<!--Back to top -->
+<a href="#" aria-label="Back to top" class="js-back-to-top back-to-top d-flex flex-column align-items-center">
+    <i class="bi bi-arrow-up mb-2 text-center"></i>
+</a>
+<!--End Back to top -->
+<!--Settings -->
+<div class="fixed-top shadow-sm" data-aos="fade-left" data-aos-duration="1500"
+     data-aos-easing="ease">
+    <div class="settings" role="group" aria-label="Basic outlined example">
+        <div class="settings-action">
+            <div class="js-settings cursor-pointer bg-body">
+                <span class="icon-light" data-bs-theme-value="light">
+                     <i class="bi bi-sun"></i>
+                </span>
+                <span class="icon-dark" data-bs-theme-value="dark">
+                     <i class="bi bi-moon"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <a aria-label="link" class="settings-more text-decoration-none bg-body position-relative border-top-0" href="shopping-cart.html">
+        <i class="bi bi-bag"></i><span class="badge bg-primary text-black position-absolute mb-4 end-0 fs-10">03</span>
+    </a>
+    <a class="bg-body position-relative fs-14" href="https://html.minshark.com/ariket-rtl/index.html">
+        <span class="fs-14">RTL</span>
+    </a>
+</div>
+<!--End Settings -->
+
+
+<!-- End footer include -->
+<!-- javascript libraries -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/dark-mode.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/form-validation.js"></script>
+<script src="assets/js/card.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/typed.umd.js"></script>
+<script src="assets/js/custom.js"></script>
+<!-- end javascript libraries -->
+</body>
+</html>
